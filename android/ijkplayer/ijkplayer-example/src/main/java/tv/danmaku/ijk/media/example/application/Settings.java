@@ -66,6 +66,11 @@ public class Settings {
         return mSharedPreferences.getBoolean(key, false);
     }
 
+    public boolean getMediaCodecHandleResolutionChange() {
+        String key = mAppContext.getString(R.string.pref_key_media_codec_handle_resolution_change);
+        return mSharedPreferences.getBoolean(key, false);
+    }
+
     public boolean getUsingOpenSLES() {
         String key = mAppContext.getString(R.string.pref_key_using_opensl_es);
         return mSharedPreferences.getBoolean(key, false);
@@ -98,6 +103,11 @@ public class Settings {
 
     public boolean getEnableAMLView() {
         String key = mAppContext.getString(R.string.pref_key_enable_aml_view);
+        return mSharedPreferences.getBoolean(key, false);
+    }
+    
+    public boolean getUsingMediaDataSource() {
+        String key = mAppContext.getString(R.string.pref_key_using_mediadatasource);
         return mSharedPreferences.getBoolean(key, false);
     }
 
